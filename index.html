@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.block1{
+			text-align: center;
+		}
+		.block2{
+			text-align: center;
+		}
+		.block3{
+			text-align: center;
+		}
+		.block4{
+			text-align: center;
+		}
+		.block5{
+			text-align: center;
+		}	
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="start">
+		<div class="container">
+			<h3>В эфире капитал шоу поле чудес! Вам нужно угадать слово</h3>
+			<div class="">
+				<div class="border col-2">
+					<h1>score</h1>
+					<h1 class="point" style="color: black">0</h1>
+				</div>
+				<div class="col-11 mx-auto bg-warning text-uppercase mt-5" style="height: 400px">
+					<h1 class="vopros1">основной девайс пк</h1>
+					<h1 class="vopros2" style="display: none">девайс для набора текста</h1>
+					<div class="vopros3" style="display: none;">
+						<h1>what is it</h1>
+						<img src="car.png" alt="">
+					</div>
+					<div class="d-flex">
+						<div class="main col-6" style="display: none">
+							<img src="yakubovich.png" class="w-50">
+							<h2>u win!</h2>
+						</div>
+						<div class="col-6 super" style="display: none">
+							supergame
+						</div>
+					</div>
+				</div>
+				<div class="col-11 mx-auto mt-5" style="height: 150px;">
+					<div class="row">
+						<div class="border col-2 block1" style="height: 150px; background: black">
+							
+						</div>
+						<div class="border col-2 block2" style="height: 150px; background: black">
+							
+						</div>
+						<div class="border col-2 block3" style="height: 150px; background: black">
+							
+						</div>
+						<div class="border col-2 block4" style="height: 150px; background: black">
+							
+						</div>
+						<div class="border col-2 block5" style="height: 150px; background: black">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-11 mx-auto mt-5">
+					<div class="d-flex">
+						<h1 class="А">A</h1>
+						<h1 class="ml-3 Б">Б</h1>
+						<h1 class="ml-3 В">В</h1>
+						<h1 class="ml-3 Г">Г</h1>
+						<h1 class="ml-3 Д">Д</h1>
+						<h1 class="ml-3 Е">Е</h1>
+						<h1 class="ml-3 Ё">Ё</h1>
+						<h1 class="ml-3 Ж">Ж</h1>
+						<h1 class="ml-3 З">З</h1>
+						<h1 class="ml-3 И">И</h1>
+						<h1 class="ml-3 Й">Й</h1>
+						<h1 class="ml-3 К">К</h1>
+						<h1 class="ml-3 Л">Л</h1>
+						<h1 class="ml-3 М">М</h1>
+						<h1 class="ml-3 Н">Н</h1>
+						<h1 class="ml-3 О">О</h1>
+						<h1 class="ml-3 П">П</h1>
+						<h1 class="ml-3 Р">Р</h1>
+						<h1 class="ml-3 С">С</h1>
+						<h1 class="ml-3 Т">Т</h1>
+						<h1 class="ml-3 У">У</h1>
+						<h1 class="ml-3 Ф">Ф</h1>
+						<h1 class="ml-3 Х">Х</h1>
+					</div>
+					<div class="d-flex">
+						<h1 class="ml-3 Ц">Ц</h1>
+						<h1 class="ml-3 Ч">Ч</h1>
+						<h1 class="ml-3 Ш">Ш</h1>
+						<h1 class="ml-3 Щ">Щ</h1>
+						<h1 class="ml-3 Ъ">Ъ</h1>
+						<h1 class="ml-3 Ы">Ы</h1>
+						<h1 class="ml-3 Ь">Ь</h1>
+						<h1 class="ml-3 Э">Э</h1>
+						<h1 class="ml-3 Ю">Ю</h1>
+						<h1 class="ml-3 Я">Я</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="end" style="display: none;">
+		<div class="bg-dark col-12" style="height: 1000px; color: white">
+			<h1>U WON</h1>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let score = 0;
+		document.querySelector(".А").onclick = function(){
+			document.querySelector(".block5").style.background = "blue"
+			document.querySelector(".block5").innerHTML = "<h1>A</h1>"
+			score = score + 1;
+			document.querySelector(".point").innerHTML = score;
+		}		
+		document.querySelector(".М").onclick = function(){
+			document.querySelector(".block1").style.background = "blue"
+			document.querySelector(".block1").innerHTML = "<h1>М</h1>"
+			score = score + 1;
+			document.querySelector(".point").innerHTML = score;
+		}
+		document.querySelector(".Ш").onclick = function(){
+			document.querySelector(".block3").style.background = "blue"
+			document.querySelector(".block3").innerHTML = "<h1>Ш</h1>"
+			score = score + 1;
+			document.querySelector(".point").innerHTML = score;
+		}
+		document.querySelector(".К").onclick = function(){
+			document.querySelector(".block4").style.background = "blue"
+			document.querySelector(".block4").innerHTML = "<h1>К</h1>"
+			score = score + 1;
+			document.querySelector(".point").innerHTML = score;
+		}
+		document.querySelector(".Ы").onclick = function(){
+			document.querySelector(".block2").style.background = "blue"
+			document.querySelector(".block2").innerHTML = "<h1>Ы</h1>"
+			score = score + 1;
+			document.querySelector(".point").innerHTML = score;
+		}
+
+		let oshibka = function() {
+			alert("wrong")
+		}
+
+
+		document.querySelector(".Б").onclick = oshibka
+		document.querySelector(".В").onclick = oshibka
+		document.querySelector(".Г").onclick = oshibka
+		document.querySelector(".Д").onclick = oshibka
+		document.querySelector(".Е").onclick = oshibka
+		document.querySelector(".Ё").onclick = oshibka
+		document.querySelector(".Ж").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".З").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".И").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Й").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Л").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Н").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".О").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".П").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Р").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".С").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Т").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".У").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Ф").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Х").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Ц").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Ч").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Щ").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Ъ").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Ь").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Э").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Ю").onclick = function(){
+			alert("wrong")
+		}
+		document.querySelector(".Я").onclick = function(){
+			alert("wrong")
+		}
+		let lo = document.getElementById('lo');
+		setInterval(function() {
+	     if (score == 5) {
+			document.querySelector(".main").style.display = "block"
+			document.querySelector(".super").style.display = "block"
+			document.querySelector(".vopros1").style.display = "none"
+			document.querySelector(".vopros2").style.display = "none"
+			document.querySelector(".vopros3").style.display = "none"
+			document.querySelector(".main").onclick = function(){
+				document.querySelector(".vopros2").style.display = "block"
+				document.querySelector(".vopros1").style.display = "none"
+				document.querySelector(".main").style.display = "none"
+				document.querySelector(".super").style.display = "none"
+				score = 0;
+				document.querySelector(".point").innerHTML = score;
+				document.querySelector(".block1").style.background = "black"
+				document.querySelector(".block2").style.background = "black"
+				document.querySelector(".block3").style.background = "black"
+				document.querySelector(".block4").style.background = "black"
+				document.querySelector(".block5").style.background = "black"
+				document.querySelector(".block4").innerHTML = "<h1></h1>"
+				document.querySelector(".block1").innerHTML = "<h1></h1>"
+				document.querySelector(".block2").innerHTML = "<h1></h1>"
+				document.querySelector(".block3").innerHTML = "<h1></h1>"
+				document.querySelector(".block5").innerHTML = "<h1></h1>"
+				document.querySelector(".К").onclick = function(){
+					document.querySelector(".block1").style.background = "blue"
+					document.querySelector(".block1").innerHTML = "<h1>К</h1>"
+					score = score + 1;
+					document.querySelector(".point").innerHTML = score;
+				}
+				document.querySelector(".А").onclick = function(){
+					document.querySelector(".block3").style.background = "blue"
+					document.querySelector(".block3").innerHTML = "<h1>A</h1>"
+					document.querySelector(".block5").style.background = "blue"
+					document.querySelector(".block5").innerHTML = "<h1>A</h1>"
+					score = score + 2;
+					document.querySelector(".point").innerHTML = score;
+				}
+				document.querySelector(".Л").onclick = function(){
+					document.querySelector(".block2").style.background = "blue"
+					document.querySelector(".block2").innerHTML = "<h1>Л</h1>"
+					score = score + 1;
+					document.querySelector(".point").innerHTML = score;
+				}
+				document.querySelector(".М").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".Ы").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".Ш").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".В").onclick = function(){
+					document.querySelector(".block4").style.background = "blue"
+					document.querySelector(".block4").innerHTML = "<h1>В</h1>"
+					score = score + 1;
+					document.querySelector(".point").innerHTML = score;
+				}
+
+			}
+			document.querySelector(".super").onclick = function(){
+				document.querySelector(".vopros3").style.display = "block"
+				document.querySelector(".vopros2").style.display = "none"
+				document.querySelector(".main").style.display = "none"
+				document.querySelector(".super").style.display = "none"
+				score = 0;
+				document.querySelector(".point").innerHTML = score;
+				document.querySelector(".block1").style.background = "black"
+				document.querySelector(".block2").style.background = "black"
+				document.querySelector(".block3").style.background = "black"
+				document.querySelector(".block4").style.background = "black"
+				document.querySelector(".block5").style.background = "black"
+				document.querySelector(".block4").innerHTML = "<h1></h1>"
+				document.querySelector(".block1").innerHTML = "<h1></h1>"
+				document.querySelector(".block2").innerHTML = "<h1></h1>"
+				document.querySelector(".block3").innerHTML = "<h1></h1>"
+				document.querySelector(".block5").innerHTML = "<h1></h1>"
+				document.querySelector(".К").onclick = function(){
+					document.querySelector(".block4").style.background = "blue"
+					document.querySelector(".block4").innerHTML = "<h1>К</h1>"
+					score = score + 1;
+					document.querySelector(".point").innerHTML = score;
+				}
+				document.querySelector(".А").onclick = function(){
+					document.querySelector(".block2").style.background = "blue"
+					document.querySelector(".block2").innerHTML = "<h1>A</h1>"
+					document.querySelector(".block5").style.background = "blue"
+					document.querySelector(".block5").innerHTML = "<h1>A</h1>"
+					score = score + 2;
+					document.querySelector(".point").innerHTML = score;
+				}
+				document.querySelector(".Ч").onclick = function(){
+					document.querySelector(".block3").style.background = "blue"
+					document.querySelector(".block3").innerHTML = "<h1>Ч</h1>"
+					score = score + 1;
+					document.querySelector(".point").innerHTML = score;
+				}
+				document.querySelector(".М").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".Ы").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".Ш").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".Л").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".В").onclick = function(){
+					alert("wrong")
+				}
+				document.querySelector(".Т").onclick = function(){
+					document.querySelector(".block1").style.background = "blue"
+					document.querySelector(".block1").innerHTML = "<h1>Т</h1>"
+					score = score + 1;
+					document.querySelector(".point").innerHTML = score;
+				}
+			}
+			
+		}
+		}, 1000);
+		
+	</script>
+</body>
+</html>
